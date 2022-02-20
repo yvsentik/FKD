@@ -40,7 +40,7 @@ beginn_str = input("введите индекс начала строки:")
 beginn = int(beginn_str)
 endd_str = input("введите индекс конца строки: ")
 endd = int(endd_str)
-itog = a[beginn:endd]
+itog = a[beginn:endd+1]
 print(itog)
 """
 #TASK4
