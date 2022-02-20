@@ -1,0 +1,100 @@
+#TASK1
+"""
+
+print("идет ли дождь?")
+a = input()
+otvet1 = a.lower()
+if(otvet1 == "yes"):
+    print("ветренно ли на улице")
+    b = input()
+    otvet2 = b.lower()
+    if(otvet2 == "yes"):
+        print("too windy for an umbrella")
+    else:
+        print("take an umbrella")
+else:
+    print("enjoy your day")
+
+"""
+
+#TASK2
+
+"""
+print("введите имя и фамилию в нижнем регистре")
+fio = input()
+fioRazered = fio.split()
+fname = fioRazered[0].capitalize()
+secname = fioRazered[1].capitalize()
+itog = fname + " " + secname
+print(itog)
+"""
+
+#TASK3
+"""
+print("введите строку из стишка")
+a = input()
+lengStr = len(a)
+print("длина строки ")
+print(lengStr)
+beginn_str = input("введите индекс начала строки:")
+beginn = int(beginn_str)
+endd_str = input("введите индекс конца строки: ")
+endd = int(endd_str)
+itog = a[beginn:endd]
+print(itog)
+"""
+#TASK4
+"""
+fname = input("введите имя: ")
+lengStr = len(fname)
+if(lengStr<5):
+    secName = input("ввеидте фамилию: ")
+    itog = fname + secName
+    itog = itog.upper()
+    print(itog)
+else:
+    itogg = fname.lower()
+    print(itogg)
+"""
+#TASK5
+"""
+n_str = input("введите целое число больше 500: ")
+n = int(n_str)
+n_sqrt = n**(0.5)
+print("Number %.2f" % (n_sqrt))
+"""
+#TASK6
+"""
+from math import sqrt
+
+
+fig = input("S треугольник/круг/прямоугольник: ")
+if(fig=="треугольник"):
+    print("введите данные 3 сторон")
+    a_str = input()
+    b_str = input()
+    c_str = input()
+    a = int(a_str)
+    b = int(b_str)
+    c = int(c_str) 
+    p = (a+b+c)/2
+    itogS = sqrt(p*(p-a)*(p-b)*(p-c))
+    print("площадь треуголника: " )
+    print(itogS)
+if(fig=="круг"):
+    print("введите радиус")
+    rad_str = input()
+    rad = int(rad_str)
+    itogS = 3.14 * rad**2
+    print("площадь круга: ")
+    print(itogS)
+if(fig=="прямоугольник"):
+    print("введите длины двух сторон")
+    a_str = input()
+    b_str = input()
+    a = int(a_str)
+    b = int(b_str)
+    itogS = a*b/2
+    print("площадь прямоугольника: " )
+    print(itogS)
+    """
